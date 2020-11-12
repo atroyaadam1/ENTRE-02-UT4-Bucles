@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 /**
- *  @author - 
+ *  @author - ANTHONNY TROYA
  *  
  * Punto de entrada a la aplicación
  *  
