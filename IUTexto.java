@@ -53,7 +53,7 @@ public class IUTexto
             if (Utilidades.estaEnOctal(primerNumero) &&
             Utilidades.estaEnOctal(segundoNumero)){
                 System.out.println("---------------------------------------------------");
-                String str = String.format("%30d\n%30d\n%21s%9d",primerNumero,segundoNumero,"suma en octal",
+               System.out.printf("%30d\n%30d\n%21s%9d",primerNumero,segundoNumero,"suma en octal",
                         calculadora.sumarEnOctal(primerNumero,segundoNumero));
             }   
             else{
