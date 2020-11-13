@@ -53,7 +53,7 @@ public class IUTexto
             if (Utilidades.estaEnOctal(primerNumero) &&
             Utilidades.estaEnOctal(segundoNumero)){
                 System.out.println("---------------------------------------------------");
-               System.out.printf("%30d\n%30d\n%21s%9d",primerNumero,segundoNumero,"suma en octal",
+               System.out.printf("%30d\n%30d\n%21s%9d\n",primerNumero,segundoNumero,"suma en octal",
                         calculadora.sumarEnOctal(primerNumero,segundoNumero));
             }   
             else{
@@ -78,9 +78,9 @@ public class IUTexto
     private void dibujarFiguras()
     {
         Pantalla.borrarPantalla();
-        System.out.println("Dibuje una figura\n Añada su Altura de la figura? (1-10) ");
+        System.out.println("Dibuje una figura\n Añada la Altura de la figura? (1-10) ");
         int altura = teclado.nextInt();
-        while(altura > 10 || altura < 1){
+        while(altura <1|| altura >10){
             System.out.println("Error, Altura de la figura? (1-10) ");
             altura = teclado.nextInt();
         }
